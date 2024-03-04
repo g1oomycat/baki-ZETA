@@ -1,0 +1,174 @@
+@import "../../../styles/scss/break_point.scss";
+.loader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: clamp(2rem, calc(1.067rem + 3.333vw), 7rem);
+  @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+    padding-top: 9rem;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_XL) {
+    padding-top: 8rem;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_MD) {
+    padding-top: 7rem;
+  }
+
+  .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .wrapper_flex {
+      column-gap: clamp(2rem, calc(-3.013rem + 5.063vw), 6rem);
+      row-gap: clamp(1rem, calc(0.813rem + 0.667vw), 2rem);
+      display: flex;
+      width: 100%;
+      height: 100%;
+      @media (max-width: $layout-breakpoint-SCREEN_LG) {
+        flex-direction: column;
+      }
+      .column {
+        position: relative;
+        background-color: $white;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:first-child {
+          width: 75%;
+          padding: 4rem 4rem 6rem 4rem;
+
+          @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+            padding: 3rem 3rem 5rem 3rem;
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_XL) {
+            padding: 2rem 2rem 4rem 2rem;
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_SM) {
+            padding: 1.5rem 1.5rem 2rem 1.5rem;
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            width: 100%;
+          }
+        }
+        &:last-child {
+          min-width: 30rem;
+          width: 25%;
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            min-width: 0;
+            width: 100%;
+            height: clamp(50rem, calc(42.113rem + 28.169vw), 70rem);
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_SM) {
+            padding: 0rem;
+            height: clamp(50rem, calc(40.345rem + 34.483vw), 60rem);
+          }
+        }
+        .name_loader {
+          font-size: clamp(4rem, calc(0.241rem + 3.797vw), 7rem);
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 0.5em;
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            font-size: clamp(2.4rem, calc(0.98rem + 5.07vw), 6rem);
+          }
+        }
+        .subname_loader {
+          font-size: clamp(2rem, calc(0.496rem + 1.519vw), 3.2rem);
+          margin-bottom: 1.3em;
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            font-size: clamp(1.6rem, calc(1.127rem + 1.69vw), 2.8rem);
+          }
+        }
+        .but_logo {
+          margin-top: auto;
+          display: flex;
+          justify-content: space-between;
+          font-size: clamp(1.8rem, calc(0.923rem + 0.886vw), 2.5rem);
+          align-items: center;
+          font-weight: 500;
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            font-size: clamp(1.6rem, calc(1.285rem + 1.127vw), 2.4rem);
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_SM) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1.5em;
+          }
+          .logs {
+            display: flex;
+            gap: clamp(2rem, calc(-0.506rem + 2.532vw), 4rem);
+            @media (max-width: $layout-breakpoint-SCREEN_LG) {
+              gap: clamp(1.5rem, calc(-0.536rem + 3.571vw), 3rem);
+            }
+            @media (max-width: $layout-breakpoint-SCREEN_SM) {
+              align-self: flex-end;
+            }
+            @media (max-width: $layout-breakpoint-SCREEN_SSM) {
+              align-self: flex-start;
+            }
+            img {
+              width: clamp(13rem, calc(6.734rem + 6.329vw), 18rem);
+              @media (max-width: $layout-breakpoint-SCREEN_LG) {
+                width: clamp(11rem, calc(5.571rem + 9.524vw), 15rem);
+              }
+              @media (max-width: $layout-breakpoint-SCREEN_SM) {
+                width: clamp(9rem, calc(7.069rem + 6.897vw), 11rem);
+              }
+            }
+          }
+          button {
+            font-size: inherit;
+            font-weight: inherit;
+            background-color: $white;
+            border: 1px solid rgba($color: $black, $alpha: 0.3);
+            padding: 0.5em 1.5em;
+            border-radius: 4rem;
+            overflow: hidden;
+            @include hoverStyle(background-color, $blue);
+            @include hoverStyle(color, $white);
+            svg {
+              vertical-align: bottom;
+            }
+          }
+        }
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          z-index: 2;
+
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            width: 40rem;
+            object-fit: none;
+            border-radius: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+              0 16px 32px rgba(0, 0, 0, 0.1);
+          }
+          @media (max-width: $layout-breakpoint-SCREEN_SM) {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: none;
+            box-shadow: none;
+          }
+        }
+        .title {
+          font-size: 3rem;
+          font-weight: 600;
+        }
+        .subtitle {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

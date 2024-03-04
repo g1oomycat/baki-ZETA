@@ -1,0 +1,216 @@
+@import "../../../styles/scss/break_point.scss";
+
+.catalog {
+  position: relative;
+  width: 100%;
+  border-radius: clamp(4rem, calc(3.627rem + 1.333vw), 6rem);
+  background-color: $white;
+  overflow: hidden;
+  .catalog_body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .catalog_title {
+      text-align: center;
+      font-size: clamp(2.8rem, calc(2.296rem + 1.8vw), 5.5rem);
+      font-weight: 600;
+      padding: 0.5em 0em 0em 0em;
+    }
+    .filter_menu {
+      position: relative;
+      display: flex;
+      font-size: clamp(1.6rem, calc(1.488rem + 0.4vw), 2.2rem);
+      gap: clamp(0.8rem, calc(0.389rem + 1.467vw), 3rem);
+      padding: 1em 0rem 0.7em 0em;
+      border-bottom: 1px solid rgba($color: $black, $alpha: 0.2);
+      button {
+        position: relative;
+        font-weight: 500;
+        font-size: inherit;
+        padding: 0.45em 1.4em;
+        border: 1px solid rgba($color: $black, $alpha: 0.5);
+        border-radius: 40px;
+        background-color: $white;
+        text-transform: uppercase;
+        @media (max-width: $layout-breakpoint-SCREEN_SSM) {
+          padding: 0.3em 1em;
+        }
+
+        @include hoverStyle(background-color, rgba($color: $blue, $alpha: 0.1));
+      }
+      .active_filter {
+        background-color: $blue;
+        color: $white;
+        border: 1px solid rgba($color: $blue, $alpha: 0.1);
+        @include hoverStyle(background-color, $blue);
+      }
+    }
+  }
+}
+
+//карточки
+.cards_menu {
+  margin-top: clamp(1.5rem, calc(1.22rem + 1vw), 3rem);
+  row-gap: 5rem;
+  column-gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_LG) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_MD) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 1rem;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_SSM) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    column-gap: 1rem;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+    border: 1px solid rgba($color: $black, $alpha: 0.2);
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 15px;
+    font-size: clamp(1.6rem, calc(1.478rem + 0.405vw), 2.2rem);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    @media (max-width: $layout-breakpoint-SCREEN_MD) {
+      padding: 1rem 1rem 2rem 1rem;
+    }
+    @include hoverStyle(
+      box-shadow,
+      (0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1))
+    );
+    @include hoverStyle(border, 1px solid rgba($color: $black, $alpha: 0.5));
+
+    .card_img {
+      position: relative;
+      width: 100%;
+      height: clamp(19rem, calc(7.078rem + 15.686vw), 35rem);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
+      @media (max-width: $layout-breakpoint-SCREEN_MD) {
+        height: clamp(18rem, calc(3rem + 26.316vw), 23rem);
+        padding-bottom: 0.5rem;
+      }
+      @media (max-width: $layout-breakpoint-SCREEN_SM) {
+        height: clamp(16rem, calc(2rem + 50vw), 22rem);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: all 0.3s ease;
+        @include hoverStyle(transform, scale(1.1));
+      }
+    }
+    // .info_card {
+    //   display: flex;
+    //   flex-direction: column;
+    //   // justify-content: space-between;
+
+    //   .text_card {
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
+    // }
+    .price {
+      font-weight: 600;
+      font-size: inherit;
+    }
+    .name,
+    .volume {
+      font-weight: 400;
+      font-size: clamp(1.4rem, calc(1.288rem + 0.4vw), 2rem);
+    }
+    .size_layer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .size,
+      .layer {
+        margin: 0.7em 0em 1em 0em;
+        font-size: clamp(1.2rem, calc(1.159rem + 0.135vw), 1.4rem);
+        color: rgba($color: $black, $alpha: 0.8);
+      }
+    }
+
+    button {
+      width: 100%;
+      font-size: clamp(1.6rem, calc(1.478rem + 0.405vw), 2.2rem);
+      font-weight: 500;
+      background-color: $white;
+      border: 1px solid rgba($color: $black, $alpha: 0.3);
+      padding: 0.5em 0em;
+      border-radius: 50px;
+      margin-top: auto;
+      @include hoverStyle(background-color, $blue);
+      @include hoverStyle(color, $white);
+      @include hoverStyle(border, 1px solid rgba($color: $black, $alpha: 0.5));
+    }
+  }
+}
+
+//смена страниц
+.change_page {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  font-size: clamp(1.4rem, calc(1.359rem + 0.135vw), 1.6rem);
+  font-weight: 500;
+  @media (max-width: $layout-breakpoint-SCREEN_MD) {
+    gap: 0.2em;
+  }
+  button {
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: white;
+    height: 2.5em;
+    padding: 0em 1em;
+    border-radius: 25px;
+    @include hoverStyle(background-color, rgba($color: $blue, $alpha: 0.1));
+  }
+  .arrow_botton {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+  .list_page {
+    display: flex;
+    align-items: center;
+    gap: 0.9em;
+    @media (max-width: $layout-breakpoint-SCREEN_MD) {
+      gap: 0.3em;
+    }
+    button {
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+
+      @include hoverStyle(background-color, rgba($color: $blue, $alpha: 0.1));
+    }
+  }
+}

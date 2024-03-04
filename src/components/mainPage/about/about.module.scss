@@ -1,0 +1,155 @@
+@import "../../../styles/scss/break_point.scss";
+.about {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: clamp(2rem, calc(1.067rem + 3.333vw), 7rem);
+  .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.title_about {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(2.4rem, calc(1.541rem + 3.067vw), 7rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1em 0em 0.5em 0em;
+}
+.wrapper_grid {
+  position: relative;
+  display: grid;
+  grid-gap: clamp(1rem, calc(0.813rem + 0.667vw), 2rem);
+  grid-template-areas:
+    "video  text_one text_four text_four"
+    "video text_two img img"
+    "video  text_three img img";
+  grid-template-columns: 0.8fr 1.2fr 0.7fr 0.7fr;
+  grid-template-rows: auto;
+  width: 100%;
+  @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+    grid-template-areas:
+      "text_four text_four"
+      "img img"
+      "video  text_one "
+      "video text_two "
+      "video  text_three";
+    grid-template-columns: 0.6fr 1.4fr;
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_XL) {
+    grid-template-areas:
+      "text_four text_four"
+      "img img"
+      "video  text_one "
+      "video text_two "
+      "text_three  text_three";
+  }
+  @media (max-width: $layout-breakpoint-SCREEN_MD) {
+    grid-template-areas:
+      "text_four "
+      "img "
+      "text_one   "
+      "text_two  "
+      "video  "
+      "text_three  ";
+    grid-template-columns: 1fr;
+  }
+  .grid_item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 3rem;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    .title_grid {
+      font-size: clamp(2.2rem, calc(2.088rem + 0.4vw), 2.8rem);
+      font-weight: 500;
+      margin-bottom: 0.3em;
+    }
+    .subtitle_grid {
+      font-size: clamp(1.4rem, calc(1.325rem + 0.267vw), 1.8rem);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+    &:nth-child(1) {
+      grid-area: text_one;
+      padding: 2rem;
+    }
+    &:nth-child(2) {
+      grid-area: text_two;
+      padding: 2rem;
+    }
+    &:nth-child(3) {
+      grid-area: video;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+        min-width: clamp(25rem, calc(21.557rem + 12.295vw), 40rem);
+      }
+      @media (max-width: $layout-breakpoint-SCREEN_MD) {
+        width: 100%;
+        min-width: 0;
+        padding: 3rem;
+        height: clamp(50rem, calc(35.517rem + 51.724vw), 65rem);
+      }
+      @media (max-width: $layout-breakpoint-SCREEN_SM) {
+        padding: 0rem;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+        @media (max-width: $layout-breakpoint-SCREEN_MD) {
+          width: 40rem;
+          // object-fit: none;
+          border-radius: 2rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+            0 16px 32px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: $layout-breakpoint-SCREEN_SM) {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: none;
+          box-shadow: none;
+        }
+      }
+    }
+    &:nth-child(4) {
+      grid-area: img;
+      @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+        height: clamp(40rem, calc(35.41rem + 16.393vw), 60rem);
+      }
+      img {
+        @include hoverStyle(transform, scale(1.1));
+      }
+      // &:hover {
+      //   img {
+      //     transform: scale(1.1);
+      //     @media (max-width: $layout-breakpoint-SCREEN_XXL) {
+      //       height: clamp(40rem, calc(35.41rem + 16.393vw), 60rem);
+      //     }
+      //   }
+      // }
+    }
+    &:nth-child(5) {
+      grid-area: text_three;
+      padding: 2rem;
+    }
+    &:nth-child(6) {
+      grid-area: text_four;
+      padding: 2rem;
+    }
+  }
+}

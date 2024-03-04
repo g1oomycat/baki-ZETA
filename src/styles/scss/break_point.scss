@@ -1,0 +1,34 @@
+// Breakpoints
+// $layout-breakpoint-SCREEN_SSSM: 30rem;
+// $layout-breakpoint-SCREEN_SSM: 40rem;
+// $layout-breakpoint-SCREEN_SM: 57rem;
+// $layout-breakpoint-SCREEN_MD: 76rem;
+// $layout-breakpoint-SCREEN_LG: 99rem;
+// $layout-breakpoint-SCREEN_XL: 120rem;
+// $layout-breakpoint-SCREEN_XXL: 150rem;
+$layout-breakpoint-SCREEN_SSSM: 300px;
+$layout-breakpoint-SCREEN_SSM: 400px;
+$layout-breakpoint-SCREEN_SM: 570px;
+$layout-breakpoint-SCREEN_MD: 760px;
+$layout-breakpoint-SCREEN_LG: 990px;
+$layout-breakpoint-SCREEN_XL: 1200px;
+$layout-breakpoint-SCREEN_XXL: 1500px;
+
+// Colors
+$background: #d9d9d9;
+$white: #fff;
+$black: #24242a;
+$red: #c21f39;
+$blue: rgb(74, 74, 240);
+//functions
+@mixin hoverStyle($property, $value) {
+  &:hover {
+    #{$property}: $value;
+  }
+
+  @media (hover: none) {
+    &:active {
+      #{$property}: $value;
+    }
+  }
+}
