@@ -59,7 +59,7 @@
       font-size: 5rem;
       font-weight: 600;
       width: 100%;
-      // grid-template-columns: 0.3fr 0.7fr;
+
       @media (max-width: $layout-breakpoint-SCREEN_LG) {
         font-size: clamp(3.5rem, calc(1.464rem + 3.571vw), 5rem);
       }

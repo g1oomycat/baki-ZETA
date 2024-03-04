@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-
+import React, { useEffect, useState } from "react";
 import classes from "./product.module.scss";
 import { useParams } from "react-router-dom";
 import { TanksList } from "../../productsList/TanksList";
@@ -20,7 +19,7 @@ const Product = () => {
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: "smooth", // для плавного скролла (поддерживается не всеми браузерами)
+        behavior: "smooth",
       });
     };
 
