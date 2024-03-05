@@ -196,10 +196,10 @@ const CardTank = ({ tank, transliterateToLatin }) => (
       {/* <div className={classes.info_card}>
         <div className={classes.text_card}> */}
       <div className={classes.price}>
-        <h4>{addSpacesToPrice(tank.price)} ₸</h4>
+        <h3>{addSpacesToPrice(tank.price)} ₸</h3>
       </div>
       <div className={classes.name}>
-        <h4>{tank.name}</h4>
+        <h3>{tank.name}</h3>
       </div>
       <div className={classes.volume}>
         <h4>{tank.volume} литров</h4>

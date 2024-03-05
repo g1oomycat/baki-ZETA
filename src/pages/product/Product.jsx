@@ -74,7 +74,7 @@ const Product = () => {
                       {product.volume} литров
                     </span>
                     <span>
-                      <span className={classes.title}>Колличество слоев:</span>{" "}
+                      <span className={classes.title}>Количество слоев:</span>{" "}
                       {product.layer}
                     </span>
                   </div>
@@ -96,8 +96,9 @@ const Product = () => {
                   </div>
                 </div>
                 <span style={{ paddingTop: "1em" }}>
-                  Для консультаци по товару, пожалуйста, свяжитесь по указанному
-                  номеру <a href="tel:+77751086362">+7 (775) 108-63-62</a>
+                  Для консультации по товару, пожалуйста, свяжитесь по
+                  указанному номеру{" "}
+                  <a href="tel:+77751086362">+7 (775) 108-63-62</a>
                 </span>
               </div>
               <div className={`${classes.discription} ${classes.border_row}`}>
