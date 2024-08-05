@@ -82,9 +82,17 @@
         }
         .subname_loader {
           font-size: clamp(2rem, calc(0.496rem + 1.519vw), 3.2rem);
-          margin-bottom: 1.3em;
+          margin-bottom: 1em;
           @media (max-width: $layout-breakpoint-SCREEN_LG) {
             font-size: clamp(1.6rem, calc(1.127rem + 1.69vw), 2.8rem);
+          }
+        }
+        .warning_text {
+          font-size: 1.8rem;
+          font-weight: 300;
+          margin-bottom: 1.5em;
+          @media (max-width: $layout-breakpoint-SCREEN_LG) {
+            font-size: clamp(1.2rem, calc(0.963rem + 0.845vw), 1.8rem);
           }
         }
         .but_logo {

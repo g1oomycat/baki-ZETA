@@ -25,6 +25,20 @@ const Loader = () => {
                   Разнообразие размеров и форм обеспечивает широкий выбор.
                 </h2>
               </div>
+              <div className={classes.warning_text}>
+                <span>
+                  Уважаемые клиенты! Пожалуйста, обратите внимание, что цены на
+                  данном сайте могут отличаться от реальных. Для получения
+                  актуальной информации о ценах и наличии товаров, перейдите на
+                  наш основной сайт{" "}
+                  <a
+                    href="https://zeta.kz/"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    zeta.kz
+                  </a>
+                </span>
+              </div>
               <div className={classes.but_logo}>
                 <button onClick={() => scrollToElement("about")}>
                   <div>

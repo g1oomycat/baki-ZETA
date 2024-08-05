@@ -3,7 +3,7 @@ export const TanksList = [
     id: 114654,
     category: "tanks",
 
-    price: 128630,
+    price: 125690,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-3000l-vertikal-uz-s/",
     img: "ИМП-ТВ-114654.webp",
@@ -33,7 +33,7 @@ export const TanksList = [
   {
     id: 114656,
     category: "tanks",
-    price: 43870,
+    price: 46195,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-1000l-3-kh-sl-gorizontal-uz-s/",
     img: "ИМП-ТВ-114656.webp",
@@ -48,7 +48,7 @@ export const TanksList = [
   {
     id: 114657,
     category: "tanks",
-    price: 55235,
+    price: 59625,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-1000l-3-kh-sl-pryamoug-uz-s/",
     img: "ИМП-ТВ-114657.webp",
@@ -63,7 +63,7 @@ export const TanksList = [
   {
     id: 114658,
     category: "tanks",
-    price: 35535,
+    price: 34190,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-1000l-2-kh-sl-vertikal-uz-s/",
     img: "ИМП-ТВ-114658.webp",
@@ -93,7 +93,7 @@ export const TanksList = [
   {
     id: 114660,
     category: "tanks",
-    price: 38050,
+    price: 41455,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-800l-gorizontal-uz-s/",
     img: "ИМП-ТВ-114660.webp",
@@ -108,7 +108,7 @@ export const TanksList = [
   {
     id: 114661,
     category: "tanks",
-    price: 46595,
+    price: 51105,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-800l-3-kh-sl-kvadrat-new-uz-s/",
     img: "ИМП-ТВ-114661.webp",
@@ -123,7 +123,7 @@ export const TanksList = [
   {
     id: 114662,
     category: "tanks",
-    price: 37530,
+    price: 40885,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-750l-pryamoug-new-uz-s/",
     img: "ИМП-ТВ-114662.webp",
@@ -138,7 +138,7 @@ export const TanksList = [
   {
     id: 114663,
     category: "tanks",
-    price: 27440,
+    price: 29530,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-600l-gorizontal-uz-s/",
     img: "ИМП-ТВ-114663.webp",
@@ -153,7 +153,7 @@ export const TanksList = [
   {
     id: 114664,
     category: "tanks",
-    price: 26585,
+    price: 28960,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-500l-3-kh-sl-gorizontal-uz-s/",
     img: "ИМП-ТВ-114664.webp",
@@ -168,7 +168,7 @@ export const TanksList = [
   {
     id: 114665,
     category: "tanks",
-    price: 23115,
+    price: 24985,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-500l-2-kh-sl-gorizontal-uz-s/",
     img: "ИМП-ТВ-114665.webp",
@@ -183,7 +183,7 @@ export const TanksList = [
   {
     id: 114666,
     category: "tanks",
-    price: 19315,
+    price: 21010,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-500l-vertikal-uz-s/",
     img: "ИМП-ТВ-114666.webp",
@@ -198,7 +198,7 @@ export const TanksList = [
   {
     id: 114667,
     category: "tanks",
-    price: 24765,
+    price: 26690,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-500l-kvadrat-uz-s/",
     img: "ИМП-ТВ-114667.webp",
@@ -258,7 +258,7 @@ export const TanksList = [
   {
     id: 114671,
     category: "tanks",
-    price: 18620,
+    price: 20445,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-300l-gorizontal-uz-s/",
     img: "ИМП-ТВ-114671.webp",
@@ -273,7 +273,7 @@ export const TanksList = [
   {
     id: 114672,
     category: "tanks",
-    price: 17160,
+    price: 18005,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-300l-2-kh-sl-gorizontal-uz-s/",
     img: "ИМП-ТВ-114672.webp",
@@ -303,7 +303,7 @@ export const TanksList = [
   {
     id: 114674,
     category: "tanks",
-    price: 12525,
+    price: 13630,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-250l-3-kh-sl-gorizontal-uz-s/",
     img: "ИМП-ТВ-114674.webp",
@@ -318,7 +318,7 @@ export const TanksList = [
   {
     id: 114675,
     category: "tanks",
-    price: 9655,
+    price: 10510,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bak-200l-2-kh-sl-vertikal-uz-s/",
     img: "ИМП-ТВ-114675.webp",
@@ -363,7 +363,7 @@ export const TanksList = [
   {
     id: 114679,
     category: "barrels",
-    price: 2855,
+    price: 2725,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-80l-uz-s/",
     img: "ИМП-ТВ-114679.webp",
@@ -408,7 +408,7 @@ export const TanksList = [
   {
     id: 114682,
     category: "barrels",
-    price: 1960,
+    price: 1880,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-40l-uz-s/",
     img: "ИМП-ТВ-114682.webp",
@@ -423,7 +423,7 @@ export const TanksList = [
   {
     id: 114683,
     category: "barrels",
-    price: 1590,
+    price: 1520,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-30l-uz-s/",
     img: "ИМП-ТВ-114683.webp",
@@ -453,7 +453,7 @@ export const TanksList = [
   {
     id: 114686,
     category: "barrels",
-    price: 1590,
+    price: 1520,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-20l-kvadrat-gusenitsa-uz-s/",
     img: "ИМП-ТВ-114686.webp",
@@ -468,7 +468,7 @@ export const TanksList = [
   {
     id: 114687,
     category: "barrels",
-    price: 1935,
+    price: 1855,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-30l-kvadrat-gusenitsa-uz-s/",
     img: "ИМП-ТВ-114687.webp",
@@ -483,7 +483,7 @@ export const TanksList = [
   {
     id: 114688,
     category: "barrels",
-    price: 2345,
+    price: 2320,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-40l-kvadrat-gusenitsa-uz-s/",
     img: "ИМП-ТВ-114688.webp",
@@ -498,7 +498,7 @@ export const TanksList = [
   {
     id: 114689,
     category: "barrels",
-    price: 2750,
+    price: 2730,
     url_zetakz:
       "https://www.zeta.kz/catalog/tovary-dlya-doma/khozyaystvennye-tovary/baki-dlya-vody/bochka-50l-kvadrat-gusenitsa-uz-s/",
     img: "ИМП-ТВ-114689.webp",

@@ -3,7 +3,6 @@ import classes from "./footer.module.scss";
 import { FaInstagram } from "react-icons/fa";
 import { TbBrandTiktok } from "react-icons/tb";
 import { FiYoutube } from "react-icons/fi";
-import { Link } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { LuStore } from "react-icons/lu";
 import { MdOutlineContactPhone } from "react-icons/md";
@@ -40,7 +39,7 @@ const Footer = () => {
             </div>
             <div className={classes.item}>
               <BsTelephone />
-              <a href="tel:+77751086362">+7 (775) 108-63-62</a>
+              <a href="tel:+77017100806">+7 (701) 710-08-06</a>
             </div>
           </div>
           <div className={classes.rows}>
